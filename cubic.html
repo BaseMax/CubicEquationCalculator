@@ -55,17 +55,13 @@
             console.log(res)
 
             const display = (value) => {
-                if(value.i === 0)
-                    return `${value.real}`
-                else
-                    return `${value.real} + ${value.i} <i>i</i>`
+                if(value.i === 0) return `${value.real}`
+                else return `${value.real} + ${value.i} <i>i</i>`
             }
             elm_roots.innerHTML = `X<sub>1</sub> = ${display(res[0])}<br>X<sub>2</sub> = ${display(res[1])}<br>X<sub>3</sub> = ${display(res[2])}<br>`
         }
 
-        window.addEventListener("load", () => {
-            document.querySelector("button").click()
-        })
+        window.addEventListener("load", () => { document.querySelector("button").click() })
         </script>
 
     </body>
