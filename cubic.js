@@ -56,10 +56,8 @@ const cubicSolve = (a, b, c, d) => {
     }
     // Only option left is that all roots are real and unequal (to get here, q < 0)
     else {
-        q = -q
-
-        const dum1 = Math.acos(r / Math.sqrt(q * q * q))
-        const temp = -term1 + 2.0 * Math.sqrt(q)
+        const dum1 = Math.acos(r / Math.sqrt(-q * -q * -q))
+        const temp = -term1 + 2.0 * Math.sqrt(-q)
 
         roots[0].real = temp * Math.cos(dum1 / 3.0)
         roots[1].real = temp * Math.cos((dum1 + 2.0 * Math.PI) / 3.0)
