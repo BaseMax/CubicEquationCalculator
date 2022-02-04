@@ -1,3 +1,3 @@
 # Cubic Equation Calculator (Cubic Solver)
 
-TODO
+**Demo:** https://basemax.github.io/CubicEquationCalculator/cubic.html
