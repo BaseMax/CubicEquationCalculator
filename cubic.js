@@ -32,7 +32,7 @@ const cubicSolve = (a, b, c, d) => {
 
         roots[0].real = -term1 + s + t
         term1 += (s + t)/2.0
-        roots[2].real = roots[2].real = -term1
+        roots[2].real = roots[1].real = -term1
         term1 = Math.sqrt(3.0)*(-t + s)/2
 
         roots[1].i = term1;
