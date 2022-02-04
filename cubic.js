@@ -1,5 +1,5 @@
 // https://github.com/BaseMax/CubicEquationCalculator
-'use strict';
+'use strict'
 
 const cubicSolve = (a, b, c, d) => {
     b /= a
