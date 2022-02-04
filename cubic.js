@@ -28,10 +28,11 @@ const cubicSolve = (a, b, c, d) => {
 
     // one root real, two are complex
     if (discrim > 0) {
+        const temp = 1.0 / 3.0
         s = r + Math.sqrt(discrim)
-        s = ((s < 0) ? -Math.pow(-s, (1.0 / 3.0)) : Math.pow(s, (1.0 / 3.0)))
+        s = ((s < 0) ? -Math.pow(-s, temp) : Math.pow(s, temp))
         t = r - Math.sqrt(discrim)
-        t = ((t < 0) ? -Math.pow(-t, (1.0 / 3.0)) : Math.pow(t, (1.0 / 3.0)))
+        t = ((t < 0) ? -Math.pow(-t, temp) : Math.pow(t, temp))
 
         roots[0].real = -term1 + s + t
         roots[2].real = roots[1].real = - (term1 + ( (s + t) / 2.0 ))
