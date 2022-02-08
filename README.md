@@ -1,5 +1,7 @@
 # Cubic Equation Calculator (Cubic Solver)
 
+> Solves the linear equation `Ax^3 + Bx^2 + Cx + D = 0` for **x**.
+
 I searched about "Cubic Equation" topic and used exists source and code to implement this web page to calculate roots of **Cubic Equation** with supporting **Complex Number**.
 
 ## Features
